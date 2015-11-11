@@ -1,0 +1,217 @@
+body {
+  padding: 60px 0 45px;
+  position: relative;	
+}
+
+.app-thumbnails {
+  margin-left: -10px;
+  list-style: none;
+  *zoom: 1;
+}
+
+.app-thumbnails:before,
+.app-thumbnails:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.app-thumbnails:after {
+  clear: both;
+}
+
+.row-fluid .app-thumbnails {
+  margin-left: 0;
+}
+
+.app-thumbnails > li {
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.app-thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 0px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+a.xapp-thumbnail:hover,
+a.xapp-thumbnail:focus {
+  border-color: #0088cc;
+  -webkit-box-shadow: 0 0px 3px rgba(0, 105, 214, 0.9);
+     -moz-box-shadow: 0 0px 3px rgba(0, 105, 214, 0.9);
+          box-shadow: 0 0px 3px rgba(0, 105, 214, 0.9);
+}
+.xapp-thumbnail:hover,
+.xapp-thumbnail:focus {
+	z-index: 2;
+	position: relative;
+	height: 100px;  
+	overflow:hidden;        
+}
+
+.app-thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.app-thumbnail-large .app-thumbnail img {
+  width: 192px;
+  height: 108px;
+}
+.app-thumbnail-middle .app-thumbnail img {
+  width: 96px;
+  height: 54px;
+}
+
+
+.app-thumbnail .caption {
+  padding: 9px;
+  color: #555555;
+}
+.app-thumbnail {
+	position: relative;
+}
+
+.app-thumbnail-large .video-length {
+	position: absolute;
+	top: 82px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	padding: 0 4px;
+}
+.app-thumbnail-large .video-author {
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	padding: 0 4px;
+	font-style: italic;
+	max-width: 136px;
+	margin: 0;
+	padding: 0 4px;
+	text-align: right;
+	line-height: 14px;
+}
+.app-thumbnail-large .video-title-short {
+	position: absolute;
+	top: -6px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	overflow: hidden;
+	width: 184px;
+	padding: 0 4px;
+	line-height: 16px;
+}
+.app-thumbnail-middle .video-length {
+	position: absolute;
+	top: 46px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	padding: 0 2px;
+}
+.app-thumbnail-middle .video-title-short {
+	position: absolute;
+	top: -6px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	overflow: hidden;
+	width: 124px;
+	padding: 0 2px;
+	max-height: 40px;
+}
+.app-thumbnail-middle .feed-title {
+	background-color: rgba(0, 0, 0, 0.4);
+	position:absolute;
+	overflow: hidden;
+    top: 4px;
+}
+.app-thumbnail-middle .feed-title.selected {
+	background-color: rgba(26, 134, 174, 0.7);
+}
+.app-thumbnail-middle .feed-title h3 {
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 54px;
+	width: 92px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #FFFFFF;
+	padding: 0 2px;
+}
+.app-thumbnail:hover,
+.app-thumbnail:focus {
+  border-color: #0088cc;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 105, 214, 0.95);
+     -moz-box-shadow: 0px 0px 20px rgba(0, 105, 214, 0.95);
+          box-shadow: 0px 0px 20px rgba(0, 105, 214, 0.95);
+}
+.app-thumbnail:active {
+  border-color: #0088cc;
+  -webkit-box-shadow: 0px 0px 20px rgba(248, 148, 6, 0.95);
+     -moz-box-shadow: 0px 0px 20px rgba(248, 148, 6, 0.95);
+          box-shadow: 0px 0px 20px rgba(248, 148, 6, 0.95);
+}
+
+.app-thumbnail.selected,
+.app-thumbnail.selected {
+	background-color: #f0d;
+}
+
+.app-thumbnail.hover .video-title-short,
+.app-thumbnail.hover .video-length,
+.app-thumbnail.hover .video-author {
+	z-index: -1;
+	position: absolute;
+}
+.app-thumbnail i {
+	z-index: -1;
+	position: absolute;
+	bottom: 4px;
+	background-color: white;
+	border: 2px solid white;
+}
+.app-thumbnail i.icon-play {
+	left: 4px;
+}
+.app-thumbnail i.icon-th-list {
+	right: 4px;
+}
+.app-thumbnail.hover i {
+	z-index: 1;
+	position: absolute;
+}
+.app-thumbnail.feed {
+//	overflow: hidden;
+//	height: 100px;
+}
+.app-thumbnail .btn.feed-edit {
+	display: block;
+	width: 100%;
+}
+
+
+dl {
+}
+.dl-horizontal dt {
+	width: 96px;
+}
+.dl-horizontal dd {
+	margin-left: 106px;
+}
